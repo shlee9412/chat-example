@@ -20,7 +20,7 @@ window.onload = async () => {
   }
 
   socket.on('enter', name => {
-    const message = `"${name}"님이 입장하였습니다. [${now()}]`;
+    const message = `"${name}"님이 입장하였습니다 [${now()}]`;
     const color = 'green';
     addMessage(message, color);
   });
@@ -33,7 +33,7 @@ window.onload = async () => {
 
   socket.on('leave', name => {
     console.log('leave::', name);
-    const message = `"${name}"님이 퇴장하였습니다. [${now()}]`;
+    const message = `"${name}"님이 퇴장하였습니다 [${now()}]`;
     const color = 'red';
     addMessage(message, color);
   });
